@@ -1,1 +1,16 @@
 
+import math
+import sys
+
+
+def hypotenuse_calculate(a, b):
+    if a>0 and b>0:
+        x=a**2+b**2
+        return math.sqrt(x)
+    else:
+        print("Fake side length")
+        sys.exit()
+
+side1=float(input("Enter the first side length: "))
+side2=float(input("Enter the second side length: "))
+print(hypotenuse_calculate(side1, side2))
